@@ -1,25 +1,34 @@
 import React from 'react';
-import './App.css';
-import 'h8k-components';
 
-import Articles from './components/Articles';
-
-const title = "Sorting Articles";
-
-function App({articles}) {
+function Articles({articles}) {
 
     return (
-        <div className="App">
-            <h8k-navbar header={title}></h8k-navbar>
-            <div className="layout-row align-items-center justify-content-center my-20 navigation">
-                <label className="form-hint mb-0 text-uppercase font-weight-light">Sort By</label>
-                <button data-testid="most-upvoted-link" className="small">Most Upvoted</button>
-                <button data-testid="most-recent-link" className="small">Most Recent</button>
-            </div>
-            <Articles articles={articles}/>
+        <div className="card w-50 mx-auto">
+            <table>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Upvotes</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                  {
+                    articles.map((article, index) => 
+                    (
+                      <tr data-testid="article" key={index}>
+                        <td data-testid="article-title">{article.title}</td>
+                        <td data-testid="article-upvotes">{article.upvotes.toString()}</td>
+                        <td data-testid="article-date">{article.date}</td>
+                    </tr>
+                    ))
+                  }
+                
+                </tbody>
+            </table>
         </div>
     );
 
 }
 
-export default App;
+export default Articles;
