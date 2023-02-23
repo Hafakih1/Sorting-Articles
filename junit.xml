@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="4" failures="4" time="2.459">
-  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2023-02-23T18:00:39" time="2.459" tests="4">
-    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.05">
+<testsuites name="jest tests" tests="4" failures="4" time="1.927">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2023-02-23T18:01:31" time="1.927" tests="4">
+    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.043">
       <failure>ReferenceError: useEffect is not defined
     at App (/projects/challenge/src/App.js:12:5)
     at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
@@ -37,7 +37,7 @@
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.004">
+    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.003">
       <failure>ReferenceError: useEffect is not defined
     at App (/projects/challenge/src/App.js:12:5)
     at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
