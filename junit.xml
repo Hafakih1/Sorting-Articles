@@ -1,0 +1,545 @@
+<testsuites name="jest tests" tests="4" failures="4" time="2.555">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2023-02-23T17:58:35" time="2.555" tests="4">
+    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.057">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:97:3)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.018">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;most-upvoted-link&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;card w-50 mx-auto&quot;
+    &gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;
+              Title
+            &lt;/th&gt;
+            &lt;th&gt;
+              Upvotes
+            &lt;/th&gt;
+            &lt;th&gt;
+              Date
+            &lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Alphabet earnings
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              22
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2011-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Artificial Mountains
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              200
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Scaling to 100k Users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              72
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              A message to our customers
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              12
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              the Emu War
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              24
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2018-04-01
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              What&apos;s SAP
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              1
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2017-01-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Simple text editor has 15k monthly users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              83
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2020-02-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:103:27)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+    <testcase classname=" Clicking on newest renders expected articles" name=" Clicking on newest renders expected articles" time="0.019">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;most-recent-link&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;card w-50 mx-auto&quot;
+    &gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;
+              Title
+            &lt;/th&gt;
+            &lt;th&gt;
+              Upvotes
+            &lt;/th&gt;
+            &lt;th&gt;
+              Date
+            &lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Alphabet earnings
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              22
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2011-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Artificial Mountains
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              200
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Scaling to 100k Users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              72
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              A message to our customers
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              12
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              the Emu War
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              24
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2018-04-01
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              What&apos;s SAP
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              1
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2017-01-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Simple text editor has 15k monthly users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              83
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2020-02-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:113:26)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+    <testcase classname=" Sequence of navigation clicks renders expected artices" name=" Sequence of navigation clicks renders expected artices" time="0.01">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;most-upvoted-link&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;card w-50 mx-auto&quot;
+    &gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;
+              Title
+            &lt;/th&gt;
+            &lt;th&gt;
+              Upvotes
+            &lt;/th&gt;
+            &lt;th&gt;
+              Date
+            &lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Alphabet earnings
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              22
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2011-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Artificial Mountains
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              200
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-11-23
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Scaling to 100k Users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              72
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              A message to our customers
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              12
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2019-10-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              the Emu War
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              24
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2018-04-01
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              What&apos;s SAP
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              1
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2017-01-21
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr
+            data-testid=&quot;article&quot;
+          &gt;
+            &lt;td
+              data-testid=&quot;article-title&quot;
+            &gt;
+              Simple text editor has 15k monthly users
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-upvotes&quot;
+            &gt;
+              83
+            &lt;/td&gt;
+            &lt;td
+              data-testid=&quot;article-date&quot;
+            &gt;
+              2020-02-22
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:124:27)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
